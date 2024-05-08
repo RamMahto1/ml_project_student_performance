@@ -22,11 +22,3 @@ class CustomException(Exception):
 
 
 
-
-if __name__=="__main__":
-    try:
-        a=0/1
-    except Exception as e:
-        logging.info("zero divided by one")
-        raise CustomException(e,sys)
-        
